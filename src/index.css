@@ -7,8 +7,53 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+.App {
+  width: 80%;
+  border: solid 5px black;
+  margin: 0 auto;
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  gap: 0px;
+  border: 1px solid black;
+  width: 100%
+}
+
+/* HORIZONTAL GRID CLASSNAMES */
+.column-left {
+  grid-column: 1 / 2;
+}
+.column-right {
+  grid-column: 2 / 3;
+}
+.column-both{
+  grid-column: 1 / -1;
+}
+
+/* VERTICAL GRID CLASSNAMES */
+.row-1{
+  grid-row: 1 / 2;
+}
+.row-2{
+  grid-row: 2 / 3;
+}
+.row-3{
+  grid-row: 3 / 4;
+}
+.row-4{
+  grid-row: 4 / 5;
+}
+
+.icon{
+  width:10%;
+}
+
+/* BACKGROUND IMAGE CLASSNAMES */
+img.grid-left, img.grid-right, img.grid-full {
+  z-index: -1;
+}
 
