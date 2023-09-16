@@ -1,15 +1,24 @@
 import img1 from '../assets/images/img-1.jpg';
 import '../index.css';
+import './intro.css';
 
 function Introduction() {
   return (
-      <div className="column-both row-2">
-        <div className="column-left row-2">
-          <h1 className="grid-full">Header</h1>
-          <p>Lots of important words</p>
+      <div className="intro-grid">
+        <div className="intro-left">
+          <h3>About Us</h3>
+          <p>
+            At Rooster Grin Media, we believe that your business is our business.
+            We excel at building solutions that are tailored to fit your needs
+            and exceed your expectations. Our team of top-notch developers and designers
+            will craft beautiful, responsive, and functional websites that will drive growth
+            and improve visibility for your business. We are passionate about helping our
+            clients achieve their goals and grow their brands.
+          </p>
+          <h5>Click Here To Learn More</h5>
         </div>
-        <div className="column-right row-2">
-          <img className="grid-full" src={img1} alt="img1" />
+        <div className="intro-right">
+          <img src={img1} alt="img1" />
         </div>
       </div>
   );

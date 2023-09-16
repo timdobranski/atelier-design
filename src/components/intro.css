@@ -1,0 +1,15 @@
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+  border: 5px solid red;
+  width: 100%
+}
+
+.intro-left {
+  grid-column: 1
+}
+.intro-right {
+  grid-column: 2;
+  border: solid 5px green;
+}

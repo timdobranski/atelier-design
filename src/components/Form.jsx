@@ -4,8 +4,9 @@ import '../index.css';
 function Form() {
   return (
       <div className="column-both row-5">
-        <h1 className="grid-full">Form Header</h1>
-        <h2 className="grid-full">Click Here to Form</h2>
+        <h3 className="grid-full">Tell Us About You</h3>
+        <p className="grid-full">Click below to tell us more about how we can serve your business</p>
+        <button>Click Here</button>
         <img className="grid-full" src={banner2} alt="banner2" />
       </div>
   );

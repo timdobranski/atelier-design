@@ -1,0 +1,33 @@
+.welcome-container {
+  /* border: 5px solid orange; */
+  position: relative;
+  height:100vh;
+}
+
+#header1 {
+  color: white;
+  font-size: 3vw;
+}
+#header2 {
+  color: white;
+  font-size: 3vw;
+}
+
+
+@media (orientation: landscape) {
+  .logo {
+    width: 18vw;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+}
+
+@media (orientation: portrait) {
+  .logo {
+    width: 30%;
+    /* height: auto;
+    margin-left: 35%;
+    margin-top: 2%; */
+  }
+}

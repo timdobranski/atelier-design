@@ -6,22 +6,30 @@ import Form from './components/Form';
 import Reviews from './components/Reviews';
 import Footer from './components/Footer';
 
+import hero from './assets/images/hero.jpg';
+import banner1 from './assets/images/banner-1.jpg';
+import banner2 from './assets/images/banner-2.jpg';
+import image1 from './assets/images/img-1.jpg';
+
 import './index.css';
 
 function App() {
   return (
     <div className="App">
-      <div className="grid-container">
+      <div className='grid-container'>
         <Welcome />
-        <Introduction />
-        <History />
+        {/* <Introduction /> */}
+        {/* <History />
         <Features />
         <Form />
         <Reviews />
-        <Footer />
-        {/* <img className="grid-full" src={banner1} alt="banner1" />
-        <img className="grid-full" src={banner2} alt="banner2" /> */}
-    </div>
+      <Footer /> */}
+
+        {/* <img className='row-1 column-both'src={hero} alt='hero' /> */}
+        {/* <img src={banner1} alt='banner1' />
+        <img src={banner2} alt='banner2' /> */}
+        {/* <img className='column-right row-2'src={image1} alt='image1' /> */}
+        </div>
     </div>
   );
 }
