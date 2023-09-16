@@ -5,7 +5,7 @@ import './welcome.css';
 
 function Welcome() {
   return (
-    <div className='welcome-container'>
+    <div className='welcome-container row-1'>
       <img className='logo' src={logo} alt='logo' />
       <div className='centered'>
         <h1 id='header1'>WELCOME TO</h1>

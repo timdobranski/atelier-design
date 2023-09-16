@@ -1,0 +1,16 @@
+.banner1 {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.content-container {
+  font-size:large;
+  position: absolute;  /* Change this to absolute */
+  padding-left: 15vw;
+  padding-top: 15vw;
+  top: 0;  /* Position it at the top */
+  left: 0;  /* Position it at the left */
+  z-index: 1;  /* Should be on top */
+  /* border: solid 5px red; */
+}

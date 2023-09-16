@@ -18,17 +18,13 @@ function App() {
     <div className="App">
       <div className='grid-container'>
         <Welcome />
-        {/* <Introduction /> */}
-        {/* <History />
-        <Features />
-        <Form />
-        <Reviews />
-      <Footer /> */}
+        <Introduction />
+        <History />
+        {/* <Features /> */}
+        {/* <Form /> */}
+        {/* <Reviews /> */}
+      {/* <Footer /> */}
 
-        {/* <img className='row-1 column-both'src={hero} alt='hero' /> */}
-        {/* <img src={banner1} alt='banner1' />
-        <img src={banner2} alt='banner2' /> */}
-        {/* <img className='column-right row-2'src={image1} alt='image1' /> */}
         </div>
     </div>
   );

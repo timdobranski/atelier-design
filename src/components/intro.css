@@ -1,15 +1,34 @@
 .intro-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
   gap: 0px;
-  border: 5px solid red;
-  width: 100%
+  /* border: 5px solid red; */
+  width: 100%;
+  height: 100%;
+  background-color: white;
 }
 
 .intro-left {
-  grid-column: 1
+  grid-column: 1;
 }
+
 .intro-right {
   grid-column: 2;
-  border: solid 5px green;
+  display: flex;
+
+  /* width: 100%; */
+  /* border: solid 5px green; */
+}
+
+.right-side-image {
+  width: 100%;
+  height: auto;
+}
+
+.textContentContainer {
+  margin-top: 8vw;
+  margin-left: 5vw;
+  margin-right: 3vw;
+  font-size: large;
 }
