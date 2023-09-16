@@ -1,9 +1,3 @@
-.welcome-container {
-  /* border: 5px solid orange; */
-  position: relative;
-  height: 100vh
-}
-
 #header1 {
   color: white;
   font-size: 3vw;
@@ -13,21 +7,25 @@
   font-size: 3vw;
 }
 
-
-@media (orientation: landscape) {
-  .logo {
-    width: 18vw;
-    height: auto;
-    margin-left: 10%;
-    margin-top: 2%;
-  }
+.hero {
+  z-index: 0;
+  width: 100%; /* Make the image cover the container's width */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
 }
 
-@media (orientation: portrait) {
-  .logo {
-    width: 30%;
-    /* height: auto;
-    margin-left: 35%;
-    margin-top: 2%; */
-  }
+.hero-content-container {
+  font-size:large;
+  position: absolute;
+  width:100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* border: solid 5px red; */
+}
+
+.logo {
+  margin-left:10vw;
+  margin-top:3vw;
+  width: 15vw;
 }

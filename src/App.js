@@ -20,7 +20,7 @@ function App() {
         <Welcome />
         <Introduction />
         <History />
-        {/* <Features /> */}
+        <Features />
         {/* <Form /> */}
         {/* <Reviews /> */}
       {/* <Footer /> */}
