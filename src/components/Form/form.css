@@ -1,0 +1,17 @@
+.banner2 {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  display: block;
+}
+
+.form-content-container {
+  font-size:large;
+  position: absolute;
+  padding-left: 55vw;
+  padding-top: 15vw;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+}

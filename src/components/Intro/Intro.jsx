@@ -1,5 +1,5 @@
-import img1 from '../assets/images/img-1.jpg';
-import '../index.css';
+import img1 from '../../assets/images/img-1.jpg';
+import '../../index.css';
 import './intro.css';
 
 function Introduction() {

@@ -1,5 +1,5 @@
-import banner1 from '../assets/images/banner-1.jpg';
-import '../index.css';
+import banner1 from '../../assets/images/banner-1.jpg';
+import '../../index.css';
 import './history.css';
 
 function History() {
