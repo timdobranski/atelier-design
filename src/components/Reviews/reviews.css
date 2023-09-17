@@ -6,13 +6,15 @@
   width: 100%;
   height: 35vw;
   background-color: white;
-  border: sandybrown 5px solid;
+  /* border: sandybrown 5px solid; */
 }
 
 .reviews-left {
   grid-column: 1 / 2;
-  border: solid 5px red;
+  /* border: solid 5px red; */
   height:100%;
+  margin-left: 10vw;
+  margin-top: 10vw
 }
 
 .reviews-right {
@@ -20,4 +22,6 @@
   display: flex;
   border: solid 5px green;
   height:100%;
+  text-align: center;
+  margin: auto;
 }

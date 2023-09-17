@@ -18,7 +18,7 @@ function Reviews() {
             <h3>Reviewer Name & Date</h3>
             <p>Review text</p>
           </div>
-          <button className='leftNav'>{'<'}</button>
+          <button className='leftNav'>{'>'}</button>
         </div>
 
 

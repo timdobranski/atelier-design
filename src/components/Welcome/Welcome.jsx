@@ -1,4 +1,4 @@
-import hero from '../../assets/images/hero.jpg';
+import hero from '../../assets/images/hero2.jpg';
 import logo from '../../assets/icons/logo-white.svg';
 import '../../index.css';
 import './welcome.css';
