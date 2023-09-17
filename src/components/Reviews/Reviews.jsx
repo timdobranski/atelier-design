@@ -1,7 +1,9 @@
 import '../../index.css';
 import './reviews.css';
+import reviews from '../../assets/fakeReviews.js';
 
 function Reviews() {
+  console.log('reviews', reviews);
   return (
       <div className="row-6">
         <div className="reviews-grid">
