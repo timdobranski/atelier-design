@@ -21,7 +21,7 @@ function Features() {
         <div className="features-grid">
           <div className="features-left">
             <div className='features-content-container'>
-              <h3 >Unbeatable Quality</h3>
+              <h3 >Unbeatable Quality!</h3>
               <p>Hover over each icon to learn more about our process that drives the best output in the business.</p>
               {hoveredIcon && <p className='feature-paragraph'>{paragraphs[hoveredIcon]}</p>}
             </div>

@@ -1,31 +1,64 @@
+import { useState } from 'react';
+import reviews from '../../assets/fakeReviews.js';
 import '../../index.css';
 import './reviews.css';
-import reviews from '../../assets/fakeReviews.js';
+import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
+import { BsDot } from 'react-icons/bs';
 
 function Reviews() {
-  console.log('reviews', reviews);
+  const [reviewIndex, setReviewIndex] = useState(0);
+
+  const handleLeftNav = () => {
+    if (reviewIndex === 0) {
+      setReviewIndex(reviews.length - 1);
+    } else {
+      setReviewIndex(reviewIndex - 1);
+    }
+  };
+  const handleRightNav = () => {
+    if (reviewIndex === reviews.length - 1) {
+      setReviewIndex(0);
+    } else {
+      setReviewIndex(reviewIndex + 1);
+    }
+  }
+  function StarRating(rating) {
+    console.log('rating: ', rating)
+    let stars = '';
+    for (let i = 1; i <= 5; i++) {
+      stars += i <= rating ? '★' : '☆';
+    }
+    return <div className='review-stars'>{stars}</div>;
+  }
+  const ReviewDots = ({ reviewIndex }) => {
+    return (
+      <div className="dot-container">
+        {[0, 1, 2].map((index) => (
+          <BsDot
+            key={index}
+            className={reviewIndex === index ? 'active-dot' : 'inactive-dot'}
+          />
+        ))}
+      </div>
+    );
+  };
   return (
       <div className="row-6">
         <div className="reviews-grid">
-
-        <div className="reviews-left">
-          <h5 className="grid-full"> Reviews Header </h5>
-          <p>Star Rating</p>
-        </div>
-
+          <div className="reviews-left">
+            <h5 className=""> {`${reviews[reviewIndex].title}`} </h5>
+            <p>{StarRating(reviews[reviewIndex].rating)}</p>
+          </div>
 
         <div className="reviews-right centered">
-          <button className='leftNav'>{'<'}</button>
-          <div>
-            <h3>Reviewer Name & Date</h3>
-            <p>Review text</p>
+          <AiOutlineLeft className='nav' onClick={handleLeftNav} />
+          <div className='review-container'>
+            <h3 className='reviews-header'>{`${reviews[reviewIndex].name} ${reviews[reviewIndex].date}`}</h3>
+            <p className='reviews-text'>{reviews[reviewIndex].text}</p>
+            <ReviewDots reviewIndex={reviewIndex} />
           </div>
-          <button className='leftNav'>{'>'}</button>
+          <AiOutlineRight className='nav' onClick={handleRightNav} />
         </div>
-
-
-
-
         </div>
       </div>
   );

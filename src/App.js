@@ -12,8 +12,8 @@ function App() {
     <div className="App grid-container">
       {/* <div className='grid-container'> */}
         <Welcome />
-        <Introduction />
         <History />
+        <Introduction />
         <Features />
         <Form />
         <Reviews />
