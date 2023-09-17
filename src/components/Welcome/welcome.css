@@ -29,3 +29,14 @@
   margin-top:3vw;
   width: 15vw;
 }
+
+.fade-in {
+  background-color: black;
+  opacity: 1;
+  transition: opacity 1.5s ease-in;
+}
+.fade-out {
+  background-color: black;
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
+}

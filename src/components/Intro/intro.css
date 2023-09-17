@@ -16,9 +16,6 @@
 .intro-right {
   grid-column: 2;
   display: flex;
-
-  /* width: 100%; */
-  /* border: solid 5px green; */
 }
 
 .right-side-image {
@@ -27,8 +24,27 @@
 }
 
 .textContentContainer {
-  margin-top: 8vw;
+  /* margin-top: 8vw;
   margin-left: 5vw;
   margin-right: 3vw;
-  font-size: large;
+  font-size: large; */
 }
+
+/* .modal {
+  background-color: black;
+  color: white;
+  border: solid 8px var(--primary-dark-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 50vw;
+  height: 50vw;
+  text-align: center;
+  margin: 0 auto;
+
+} */
+
+
+
+/* .modal-container {
+  background-color: black;
+  flex: 1;
+} */

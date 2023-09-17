@@ -11,10 +11,10 @@ function History() {
   };
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevent the default form submission behavior
-
+    console.log('inside handler')
     try {
       // Send a POST request to your server with the email in the body
-      await axios.post('http://localhost:3002/send-email', {
+      await axios.post('http://localhost:3000/send-email', {
         recipientEmail: email,
       });
 
