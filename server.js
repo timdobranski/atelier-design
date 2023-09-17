@@ -6,12 +6,14 @@ const sgMail = require('@sendgrid/mail');
 const bodyParser = require('body-parser');
 require('dotenv').config();
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+const cors = require('cors');
 
 app.use(express.static(path.join(__dirname, './build')));
 app.use(bodyParser.json());
+app.use(cors());
+
 
 app.post('/send-email', async (req, res) => {
-
 
   const { recipientEmail } = req.body;
   console.log('recipient email:', recipientEmail);
@@ -21,7 +23,7 @@ app.post('/send-email', async (req, res) => {
       to: recipientEmail,
       from: 'timdobranski@gmail.com',
       subject: 'Welcome to the Family!',
-      text: 'We\'re glad to have you aboard! Stay tuned for more cool update!'
+      text: 'We\'re glad to have you aboard! Stay tuned for more cool updates!'
     };
 
     await sgMail.send(msg);
