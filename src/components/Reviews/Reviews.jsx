@@ -46,7 +46,9 @@ function Reviews() {
       <div className="row-6">
         <div className="reviews-grid">
           <div className="reviews-left">
-            <h5 className=""> {`${reviews[reviewIndex].title}`} </h5>
+            <h3 className='section-titles'> OUR REVIEWS </h3>
+            <p className='reviews-description-paragraph'>See what our clients are saying about our work!</p>
+            <h5 className="review-title"> {`"${reviews[reviewIndex].title}"`} </h5>
             <p>{StarRating(reviews[reviewIndex].rating)}</p>
           </div>
 
@@ -54,7 +56,7 @@ function Reviews() {
           <AiOutlineLeft className='nav' onClick={handleLeftNav} />
           <div className='review-container'>
             <h3 className='reviews-header'>{`${reviews[reviewIndex].name} ${reviews[reviewIndex].date}`}</h3>
-            <p className='reviews-text'>{reviews[reviewIndex].text}</p>
+            <p className='reviews-text'>{`"${reviews[reviewIndex].text}"`}</p>
             <ReviewDots reviewIndex={reviewIndex} />
           </div>
           <AiOutlineRight className='nav' onClick={handleRightNav} />

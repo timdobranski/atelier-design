@@ -11,8 +11,9 @@
 .reviews-left {
   grid-column: 1 / 2;
   height:100%;
-  margin-left: 10vw;
-  margin-top: 10vw
+  margin-left: var(--left-content-margin);
+  margin-top: 5vw;
+  margin-bottom: 4vw;
 }
 .reviews-right {
   grid-column: 2 / 3;
@@ -25,7 +26,9 @@
   padding-right: 2vw;
 }
 .review-stars{
-  color: var(--primary-dark-color)
+  color: var(--primary-dark-color);
+  font-size: 2vw;
+
 }
 .review-container {
   padding-left: 2vw;
@@ -50,4 +53,12 @@
 .inactive-dot {
   color: var(--primary-light-color);
   font-size: 3vw;
+}
+.review-title {
+  font-size: 2vw;
+  margin: 0;
+}
+.reviews-description-paragraph{
+  margin-top: 0;
+  margin-bottom: 2vw;
 }

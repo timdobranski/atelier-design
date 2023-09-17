@@ -8,7 +8,7 @@ const reviews = [
     date: '11/30/2023'
   },
   {
-    name: 'Jane Doe',
+    name: 'Anonymous Tech Billionaire',
     title: 'Job well done!',
     text: `Wow! What an amazing job. Tim made our website to my specifications PERFECTLY and
     even did my laundry and took my dog for a walk! Amazing customer service!`,
@@ -16,11 +16,11 @@ const reviews = [
     date: '12/12/2012'
   },
   {
-    name: 'Definitely Nottim',
-    title: 'Not Tim',
-    text: 'Rooster Grin is the best! Tim is the best! I love Rooster Grin!',
-    rating: 3,
-    date: '12/12/2012'
+    name: 'Ralph Wiggum',
+    title: 'Hire this man!',
+    text: 'Rooster Grin is the best! I love Rooster Grin!',
+    rating: 5,
+    date: '3/12/2020'
   }
 ]
 

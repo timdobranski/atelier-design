@@ -58,7 +58,7 @@ function Introduction() {
         <div className='intro-grid'>
           <div className="intro-left">
             <div className="textContentContainer">
-              <h3>About Us</h3>
+              <h3 className='section-titles'>ABOUT US</h3>
               <p>
                 At Rooster Grin Media, we believe that your business is our business.
                 We excel at building solutions that are tailored to fit your needs

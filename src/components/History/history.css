@@ -8,10 +8,17 @@
 .content-container {
   font-size:large;
   position: absolute;
-  padding-left: 15vw;
-  padding-top: 15vw;
-  top: 0;  /* Position it at the top */
-  left: 0;  /* Position it at the left */
-  z-index: 1;  /* Should be on top */
-  /* border: solid 5px red; */
+  padding: var(--left-content-margin);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.email-input{
+  font-size: 1vw;
+  padding: 0.25vw;
+  width: 20vw;
+  border: solid 1px black;
+}
+.email-input:focus{
+  outline: none;
 }

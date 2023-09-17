@@ -31,17 +31,18 @@ function History() {
       <div className="row-3">
             <img className='banner1' src={banner1} alt="banner1" />
             <div className='content-container'>
-              <h3 >Join the Family</h3>
-              <p>Sign Up for our monthly newsletter</p>
+              <h3 className='section-titles'>JOIN THE FAMILY</h3>
+              <p>Sign up for our monthly newsletter</p>
               <form onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Enter your email"
           value={email}
           onChange={handleEmailChange}
+          className="email-input radius"
         />
-        <button type="submit" className="grid-full">
-          Sign Up
+        <button type="submit" className="purpleButton radius">
+          SIGN UP
         </button>
       </form>
             </div>
