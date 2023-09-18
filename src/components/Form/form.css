@@ -4,14 +4,35 @@
   z-index: 0;
   display: block;
 }
-
 .form-content-container {
   font-size:large;
   position: absolute;
   padding-left: 55vw;
-  padding-top: 15vw;
+  padding-top: 2vw;
   top: 0;
   left: 0;
   z-index: 1;
+}
+.gallery-container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 2; */
+  grid-gap: 1vw;
+  padding: 1vw;
+  margin: 1vw;
 
+  align-items: center;
+  text-align: center;
+}
+
+
+.gallery-photo {
+  height: 10vw;
+  border: solid 8px black;
+  border-radius: 5px;
+}
+.gallery-photo-vertical {
+  height: 20vw;
+  border: solid 8px black;
+  border-radius: 5px;
 }

@@ -19,6 +19,7 @@
   margin-top: 8vw;
   margin-left: var(--left-content-margin);
   font-size: large;
+  border-radius: 5px;
 }
 
 .features-icons-grid {
@@ -41,5 +42,10 @@
 }
 
 .feature-paragraph {
-
+  border: solid 10px var(--primary-dark-color);
+  background-color: black;
+  border-radius: 5px;;
+  color: white;
+  width: 30vw;
+  padding: 2vw;
 }

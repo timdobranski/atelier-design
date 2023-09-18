@@ -1,12 +1,10 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 :root {
   --primary-dark-color: rgb(171, 81, 189);
   --primary-light-color: #e7dff6;
@@ -14,7 +12,6 @@ body {
   --secondary-light-color: #ffeac0;
   --left-content-margin: 8vw;
 }
-
 p {
   font-size: 1vw;
 }
@@ -23,11 +20,16 @@ p {
   grid-template-rows: repeat(7, auto);
   gap: 0px;
 }
-
-.section-titles{
+.section-titles {
   font-size: 2vw;
-  color: var(--primary-dark-color);
-  margin-bottom: .5vw;
+  background: linear-gradient(to right, var(--primary-dark-color) 0%, var(--secondary-dark-color) 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 0.5vw;
 }
 
 /* VERTICAL GRID CLASSNAMES */
@@ -59,10 +61,6 @@ p {
   position: relative;
 }
 
-.icon{
-  width:10%;
-}
-
 .purpleButton {
   background-color: var(--primary-dark-color);
   color: white;
@@ -75,24 +73,20 @@ p {
   padding: 1vw 1vw;
   margin: 1vw 0vw;
 }
-.yellowButton {
-  background-color: #ffd816;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  border: none;
-  width: 8vw;
-  height: auto;
-  font-size: .75vw;
-  padding: 1vw 1vw;
+.purpleButton:hover {
+  cursor: pointer;
+  background-color: rgb(95, 36, 124)
 }
 
 .centered {
   text-align: center;
   align-items: center;
-  /* border: solid 3px lightgreen; */
 }
 .radius{
   border-radius: 6px;
+}
+.linked-text{
+  color: var(--primary-dark-color);
+  text-decoration: underline;
+  font-weight: bold;
 }

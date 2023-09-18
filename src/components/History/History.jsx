@@ -31,8 +31,9 @@ function History() {
       <div className="row-3">
             <img className='banner1' src={banner1} alt="banner1" />
             <div className='content-container'>
-              <h3 className='section-titles'>JOIN THE FAMILY</h3>
-              <p>Sign up for our monthly newsletter</p>
+              <h3 className='section-titles'>SIGN UP</h3>
+              <p>Enter your email below to sign up for our monthly newsletter</p>
+              <p className='comment'>{'(sends confirmation email to address provided)'}</p>
               <form onSubmit={handleSubmit}>
         <input
           type="text"

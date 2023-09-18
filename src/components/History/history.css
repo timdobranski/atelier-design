@@ -22,3 +22,7 @@
 .email-input:focus{
   outline: none;
 }
+.comment {
+  font-style: italic;
+  color: var(--primary-dark-color);
+}

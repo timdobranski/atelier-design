@@ -24,10 +24,10 @@ function Features() {
           </div>
           <div className="features-right">
             <div className='features-icons-grid'>
-              <div className='icon'
-                onMouseEnter={() => setHoveredIcon('QUALITY')}
-                onMouseLeave={() => setHoveredIcon(null)}>
-                <img src={expertise} alt="quality" />
+                <div className='icon'
+                  onMouseEnter={() => setHoveredIcon('QUALITY')}
+                  onMouseLeave={() => setHoveredIcon(null)}>
+                  <img src={expertise} alt="quality" />
                 <h3>QUALITY</h3>
               </div>
               <div className='icon'

@@ -23,7 +23,6 @@ function Reviews() {
     }
   }
   function StarRating(rating) {
-    console.log('rating: ', rating)
     let stars = '';
     for (let i = 1; i <= 5; i++) {
       stars += i <= rating ? '★' : '☆';
@@ -43,26 +42,26 @@ function Reviews() {
     );
   };
   return (
-      <div className="row-6">
-        <div className="reviews-grid">
-          <div className="reviews-left">
-            <h3 className='section-titles'> OUR REVIEWS </h3>
-            <p className='reviews-description-paragraph'>See what our clients are saying about our work!</p>
-            <h5 className="review-title"> {`"${reviews[reviewIndex].title}"`} </h5>
-            <p>{StarRating(reviews[reviewIndex].rating)}</p>
-          </div>
+    <div className="row-6">
+      <div className="reviews-grid">
+        <div className="reviews-left">
+          <h3 className='section-titles'> OUR REVIEWS </h3>
+          <p className='reviews-description-paragraph'>See what our clients are saying about our work!</p>
+          <h4 className="review-title"> {`"${reviews[reviewIndex].title}"`} </h4>
+          <div>{StarRating(reviews[reviewIndex].rating)}</div>
+        </div>
 
-        <div className="reviews-right centered">
-          <AiOutlineLeft className='nav' onClick={handleLeftNav} />
-          <div className='review-container'>
-            <h3 className='reviews-header'>{`${reviews[reviewIndex].name} ${reviews[reviewIndex].date}`}</h3>
-            <p className='reviews-text'>{`"${reviews[reviewIndex].text}"`}</p>
-            <ReviewDots reviewIndex={reviewIndex} />
-          </div>
-          <AiOutlineRight className='nav' onClick={handleRightNav} />
+      <div className="reviews-right centered">
+        <AiOutlineLeft className='nav' onClick={handleLeftNav} />
+        <div className='review-container'>
+          <h3 className='reviews-header'>{`${reviews[reviewIndex].name} ${reviews[reviewIndex].date}`}</h3>
+          <p className='reviews-text'>{`"${reviews[reviewIndex].text}"`}</p>
+          <ReviewDots reviewIndex={reviewIndex} />
         </div>
-        </div>
+        <AiOutlineRight className='nav' onClick={handleRightNav} />
       </div>
+      </div>
+    </div>
   );
 }
 
