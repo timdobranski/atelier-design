@@ -14,7 +14,7 @@ function History() {
     // console.log('inside handler')
     try {
       // Send a POST request to your server with the email in the body
-      await axios.post('3.21.206.6:3002/send-email', {
+      await axios.post('/send-email', {
         recipientEmail: email,
       });
 
