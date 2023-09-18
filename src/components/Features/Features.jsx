@@ -28,25 +28,25 @@ function Features() {
                   onMouseEnter={() => setHoveredIcon('QUALITY')}
                   onMouseLeave={() => setHoveredIcon(null)}>
                   <img src={expertise} alt="quality" />
-                <h3>QUALITY</h3>
+                <h3 className='feature-titles'>QUALITY</h3>
               </div>
               <div className='icon'
                 onMouseEnter={() => setHoveredIcon('HYGEINE')}
                 onMouseLeave={() => setHoveredIcon(null)}>
                 <img src={hygeine} alt="hygeine" />
-                <h3>HYGEINE</h3>
+                <h3 className='feature-titles'>HYGEINE</h3>
               </div>
               <div className='icon'
               onMouseEnter={() => setHoveredIcon('SCIENCE')}
                 onMouseLeave={() => setHoveredIcon(null)}>
                 <img src={lab} alt="science" />
-                <h3>SCIENCE</h3>
+                <h3 className='feature-titles'>SCIENCE</h3>
               </div>
               <div className='icon'
                 onMouseEnter={() => setHoveredIcon('SPEED')}
                 onMouseLeave={() => setHoveredIcon(null)}>
                 <img src={retention} alt="speed" />
-                <h3>SPEED</h3>
+                <h3 className='feature-titles'>SPEED</h3>
               </div>
             </div>
           </div>
