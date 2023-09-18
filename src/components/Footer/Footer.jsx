@@ -6,20 +6,12 @@ function Footer() {
   return (
     <div className='footer-container centered'>
       <p className='followUs'> Follow Us: </p>
-      {/* <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-  <BsFacebook className='social-icon' />
-</a>
-
-<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-  <BsInstagram className='social-icon' />
-</a> */}
       <a href="https://www.facebook.com/" aria-label='See our facebook page'>
         <BsFacebook className='social-icon' />
       </a>
-
-<a href="https://www.instagram.com/" aria-label='See our instagram page'>
-  <BsInstagram className='social-icon' />
-</a>
+      <a href="https://www.instagram.com/" aria-label='See our instagram page'>
+        <BsInstagram className='social-icon' />
+      </a>
     </div>
   );
 }

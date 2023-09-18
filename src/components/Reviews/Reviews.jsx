@@ -41,6 +41,7 @@ function Reviews() {
       </div>
     );
   };
+
   return (
     <div className="row-6">
       <div className="reviews-grid">

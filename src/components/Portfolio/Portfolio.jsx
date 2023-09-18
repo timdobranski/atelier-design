@@ -4,7 +4,7 @@ import atelier from '../../assets/images/atelier2.png';
 import stringSchool from '../../assets/LMSS.mov';
 
 import '../../index.css';
-import './form.css';
+import './portfolio.css';
 
 function Form() {
   return (
