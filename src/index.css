@@ -35,6 +35,8 @@ p {
 /* VERTICAL GRID CLASSNAMES */
 .row-1{
   grid-row: 1 / 2;
+  align-items: center;
+  place-items: center;
 }
 .row-2{
   grid-row: 2 / 3;

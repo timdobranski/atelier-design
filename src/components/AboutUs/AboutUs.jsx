@@ -3,7 +3,9 @@ import Modal from 'react-modal';
 import img1 from '../../assets/images/img-1.jpg';
 import earlyEarth from '../../assets/images/early-earth.jpeg';
 import '../../index.css';
+import '../../index.mobile.css';
 import './aboutUs.css';
+import './aboutUs.mobile.css'
 
 function Introduction() {
   const [modalIsOpen, setModalIsOpen] = useState(false);

@@ -1,6 +1,8 @@
 import banner1 from '../../assets/images/banner-1.jpg';
 import axios from 'axios';
 import '../../index.css';
+import '../../index.mobile.css';
+import './history.mobile.css';
 import './history.css';
 import { useState } from 'react';
 
