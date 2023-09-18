@@ -13,7 +13,7 @@ body {
   --left-content-margin: 8vw;
 }
 p {
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 .grid-container {
   display: grid;

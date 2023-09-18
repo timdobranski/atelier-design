@@ -31,7 +31,7 @@ function Introduction() {
       >
         <div className='modal-container'>
           <h4 className='section-titles modal-title'>Our History</h4>
-          <p>Over 13 billion years ago, when the Earth had only just began to settle and cool,
+          <p className='modal-paragraph'>Over 13 billion years ago, when the Earth had only just began to settle and cool,
             Rooster Grin had already built over two hundred websites. Our expert developers
             have been building websites since the dawn of time, and we're ready to help you build yours.
           </p>

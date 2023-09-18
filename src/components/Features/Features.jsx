@@ -5,7 +5,9 @@ import expertise from '../../assets/icons/home-expertise.svg';
 import lab from '../../assets/icons/home-lab.svg';
 import paragraphs from '../../assets/featureParagraphs';
 import '../../index.css';
+import '../../index.mobile.css';
 import './features.css';
+import './features.mobile.css';
 
 function Features() {
   const [hoveredIcon, setHoveredIcon] = useState(null);
@@ -18,7 +20,7 @@ function Features() {
             <h3 className='section-titles'>OUR VALUES</h3>
             <p>Hover over each icon to learn more about our process that drives the best output in the business.</p>
             <div className='features-paragraph-container'>
-              {hoveredIcon && <p className='feature-paragraph'>{paragraphs[hoveredIcon]}</p>}
+              {hoveredIcon && <p className='feature-paragraph fade-in'>{paragraphs[hoveredIcon]}</p>}
             </div>
           </div>
         </div>

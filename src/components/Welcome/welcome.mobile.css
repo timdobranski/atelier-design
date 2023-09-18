@@ -19,8 +19,8 @@
   }
   .hero {
     z-index: 0;
+    width: 100vw;
     height: auto;
-    width: 200%;
     display: block;
   }
   .hero-content-container {
@@ -38,15 +38,6 @@
     width: 35vw;
   }
 
-  .fade-in {
-    background-color: black;
-    opacity: 1;
-    transition: opacity 1.5s ease-in;
-  }
-  .fade-out {
-    background-color: black;
-    opacity: 0;
-    transition: opacity 1.5s ease-out;
-  }
+
 
 }

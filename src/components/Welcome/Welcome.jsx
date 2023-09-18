@@ -2,6 +2,7 @@ import hero from '../../assets/images/hero2.jpg';
 import heroVertical from '../../assets/images/hero-vertical2.jpg';
 import logo from '../../assets/icons/logo-white.svg';
 import '../../index.css';
+import '../../index.mobile.css';
 import './welcome.css';
 import './welcome.mobile.css';
 import { useState, useEffect } from 'react';
@@ -34,7 +35,7 @@ function Welcome() {
   return (
     <div className={`row-1 ${fadedIn ? 'fade-in' : 'fade-out'}`}>
             {orientation === "portrait" ? (
-        <img src={heroVertical} alt="Portrait" />
+        <img className='hero'src={heroVertical} alt="Portrait" />
       ) : (
         <img className='hero' src={hero} alt='hero' />
       )}

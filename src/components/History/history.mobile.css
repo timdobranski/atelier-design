@@ -1,7 +1,7 @@
 
 @media screen and (orientation: portrait) {
 .banner1 {
-  width: 200%;
+  width: 100vw;
   height: auto;
   z-index: 0;
   display: block;
@@ -9,16 +9,15 @@
 
 .content-container {
   font-size:large;
-  position: absolute;
-  padding: var(--left-content-margin);
+  padding-left: var(--left-content-margin);
   top: 0;
   left: 0;
   z-index: 1;
 }
 .email-input{
-  font-size: 1vw;
+  font-size: 3vw;
   padding: 0.25vw;
-  width: 20vw;
+  width: 55vw;
   border: solid 1px black;
 }
 .email-input:focus{

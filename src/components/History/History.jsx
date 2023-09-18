@@ -2,8 +2,8 @@ import banner1 from '../../assets/images/banner-1.jpg';
 import axios from 'axios';
 import '../../index.css';
 import '../../index.mobile.css';
-import './history.mobile.css';
 import './history.css';
+import './history.mobile.css';
 import { useState } from 'react';
 
 function History() {
@@ -28,10 +28,9 @@ function History() {
 
   return (
     <div className="row-3">
-      <img className='banner1' src={banner1} alt="banner1" />
       <div className='content-container'>
         <h3 className='section-titles'>SIGN UP</h3>
-        <p>Enter your email below to sign up for our monthly newsletter</p>
+        <p>Enter your email below to sign up for our newsletter</p>
         <p className='comment'>{'(sends confirmation email to address provided)'}</p>
         <form onSubmit={handleSubmit}>
           <input
@@ -46,6 +45,7 @@ function History() {
           </button>
         </form>
       </div>
+      <img className='banner1' src={banner1} alt="banner1" />
     </div>
   );
 }
