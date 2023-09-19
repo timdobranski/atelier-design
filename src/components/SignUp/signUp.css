@@ -1,31 +1,45 @@
 @media screen and (orientation: landscape) {
-.banner1 {
-  width: 100%;
-  height: auto;
-  z-index: 0;
-  display: block;
-}
+  .banner1 {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    display: block;
+  }
 
-.content-container {
-  font-size:large;
-  position: absolute;
-  padding-left: var(--left-content-margin);
-  padding-top: 4vw;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-.email-input{
-  font-size: 1vw;
-  padding: 0.25vw;
-  width: 20vw;
-  border: solid 1px black;
-}
-.email-input:focus{
-  outline: none;
-}
-.comment {
-  font-style: italic;
-  color: var(--primary-dark-color);
-}
+  .content-container {
+    font-size:large;
+    position: absolute;
+    padding-left: var(--left-content-margin);
+    padding-top: 4vw;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .email-input{
+    font-size: 1vw;
+    padding: 0.25vw;
+    width: 20vw;
+    border: solid 1px black;
+  }
+  .email-input:focus{
+    outline: none;
+  }
+  .comment {
+    font-style: italic;
+    color: var(--primary-dark-color);
+  }
+  .notification {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 3vw;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 1em;
+    opacity: 1;
+    transition: opacity 3s ease;
+  }
+  .notification.fade-out {
+    opacity: 0;
+  }
 }

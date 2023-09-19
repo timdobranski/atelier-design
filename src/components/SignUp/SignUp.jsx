@@ -6,8 +6,14 @@ import './signUp.css';
 import './signUp.mobile.css';
 import { useState } from 'react';
 
-function History() {
+function SignUp() {
   const [email, setEmail] = useState('');
+  const [notification, setNotification] = useState({
+    show: false,
+    message: '',
+  });
+  const [fading, setFading] = useState(false);
+
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -20,7 +26,17 @@ function History() {
         recipientEmail: email,
       });
       setEmail('');
-      console.log('Email sent successfully');
+      setNotification({
+        show: true,
+        message: 'Signup successful. Check your email for a confirmation message.',
+      });
+      setTimeout(() => {
+        setFading(true);
+        setTimeout(() => {
+          setNotification({ show: false, message: '' });
+          setFading(false);
+        }, 3000); // wait another 3 seconds before actually removing the element
+      }, 3000); // show the notification for 3 seconds, then start fading
     } catch (error) {
       console.error('Error sending email:', error);
     }
@@ -46,8 +62,15 @@ function History() {
         </form>
       </div>
       <img className='banner1' src={banner1} alt="banner1" />
+      {notification.show && (
+        <div
+          className={`notification ${fading ? 'fade-out' : ''}`}
+        >
+          {notification.message}
+        </div>
+      )}
     </div>
   );
 }
 
-export default History;
+export default SignUp;

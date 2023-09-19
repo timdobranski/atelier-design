@@ -5,7 +5,7 @@ import earlyEarth from '../../assets/images/early-earth.jpeg';
 import '../../index.css';
 import '../../index.mobile.css';
 import './aboutUs.css';
-import './aboutUs.mobile.css'
+import './aboutUs.mobile.css';
 
 function Introduction() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -35,7 +35,7 @@ function Introduction() {
             Rooster Grin had already built over two hundred websites. Our expert developers
             have been building websites since the dawn of time, and we're ready to help you build yours.
           </p>
-          <img className='early-earth' src={earlyEarth} alt="img1" />
+          <img className='early-earth' src={earlyEarth} alt="primordial early earth" />
         </div>
       </Modal>
       <div className='intro-grid'>

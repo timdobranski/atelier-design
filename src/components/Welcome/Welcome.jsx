@@ -35,12 +35,12 @@ function Welcome() {
   return (
     <div className={`row-1 ${fadedIn ? 'fade-in' : 'fade-out'}`}>
       {orientation === 'portrait' ? (
-        <img className='hero'src={heroVertical} alt="Portrait" />
+        <img className='hero'src={heroVertical} alt="golden gate bridge at sunset" />
       ) : (
-        <img className='hero' src={hero} alt='hero' />
+        <img className='hero' src={hero} alt='golden gate bridge at sunset' />
       )}
       <div className='hero-content-container'>
-        <img className='logo' src={logo} alt='logo' />
+        <img className='logo' src={logo} alt='rooster grin company logo' />
         <div className='centered'>
           <h1 id='header1'>WELCOME TO</h1>
           <h2 id='header2' >Rooster Grin</h2>
