@@ -9,14 +9,14 @@ import { useState, useEffect } from 'react';
 
 function Welcome() {
   const [fadedIn, setFadedIn] = useState(false);
-  const [orientation, setOrientation] = useState("portrait");
+  const [orientation, setOrientation] = useState('portrait');
 
   // Function to determine and set the orientation
   const checkOrientation = () => {
     if (window.innerWidth > window.innerHeight) {
-      setOrientation("landscape");
+      setOrientation('landscape');
     } else {
-      setOrientation("portrait");
+      setOrientation('portrait');
     }
   };
 
@@ -26,15 +26,15 @@ function Welcome() {
 
   useEffect(() => {
     checkOrientation();
-    window.addEventListener("resize", checkOrientation);
+    window.addEventListener('resize', checkOrientation);
     return () => {
-      window.removeEventListener("resize", checkOrientation);
+      window.removeEventListener('resize', checkOrientation);
     };
   }, []);
 
   return (
     <div className={`row-1 ${fadedIn ? 'fade-in' : 'fade-out'}`}>
-            {orientation === "portrait" ? (
+      {orientation === 'portrait' ? (
         <img className='hero'src={heroVertical} alt="Portrait" />
       ) : (
         <img className='hero' src={hero} alt='hero' />

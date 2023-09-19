@@ -23,7 +23,7 @@ function Reviews() {
     } else {
       setReviewIndex(reviewIndex + 1);
     }
-  }
+  };
   function StarRating(rating) {
     let stars = '';
     for (let i = 1; i <= 5; i++) {
@@ -54,15 +54,15 @@ function Reviews() {
           <div>{StarRating(reviews[reviewIndex].rating)}</div>
         </div>
 
-      <div className="reviews-right centered">
-        <AiOutlineLeft className='nav' onClick={handleLeftNav} />
-        <div className='review-container'>
-          <h3 className='reviews-header'>{`${reviews[reviewIndex].name} ${reviews[reviewIndex].date}`}</h3>
-          <p className='reviews-text'>{`"${reviews[reviewIndex].text}"`}</p>
-          <ReviewDots reviewIndex={reviewIndex} />
+        <div className="reviews-right centered">
+          <AiOutlineLeft className='nav' onClick={handleLeftNav} />
+          <div className='review-container'>
+            <h3 className='reviews-header'>{`${reviews[reviewIndex].name} ${reviews[reviewIndex].date}`}</h3>
+            <p className='reviews-text'>{`"${reviews[reviewIndex].text}"`}</p>
+            <ReviewDots reviewIndex={reviewIndex} />
+          </div>
+          <AiOutlineRight className='nav' onClick={handleRightNav} />
         </div>
-        <AiOutlineRight className='nav' onClick={handleRightNav} />
-      </div>
       </div>
     </div>
   );

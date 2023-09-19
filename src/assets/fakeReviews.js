@@ -22,6 +22,6 @@ const reviews = [
     rating: 5,
     date: '3/12/2020'
   }
-]
+];
 
-export default reviews
+export default reviews;
