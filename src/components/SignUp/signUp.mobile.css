@@ -5,7 +5,6 @@
     z-index: 0;
     display: block;
   }
-
   .content-container {
     font-size:large;
     padding-left: var(--left-content-margin);
@@ -36,5 +35,19 @@
     height: 6vw;
     background-color: var(--primary-dark-color);
     color: white;
+  }
+  .notification {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 3vw;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 1em;
+    opacity: 1;
+    transition: opacity 3s ease;
+  }
+  .notification.fade-out {
+    opacity: 0;
   }
 }

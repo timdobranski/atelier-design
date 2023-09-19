@@ -14,7 +14,6 @@ body {
   --hero-gradient: linear-gradient(90deg, rgba(245, 37, 151, 1) 35%, rgba(235, 203, 37, 1) 65%);
   --title-gradient: linear-gradient(to right, var(--primary-dark-color) 0%, var(--secondary-dark-color) 100%);
   --sunset-gradient: linear-gradient(to right, rgb(225, 66, 153) 0%, orange 50%, yellow 100%);
-
 }
 p {
   font-size: 1.5vw;
@@ -35,12 +34,8 @@ p {
   color: transparent;
   margin-bottom: 0.5vw;
 }
-
-/* VERTICAL GRID CLASSNAMES */
 .row-1{
   grid-row: 1 / 2;
-  align-items: center;
-  place-items: center;
 }
 .row-2{
   grid-row: 2 / 3;
@@ -63,7 +58,6 @@ p {
 .row-1, .row-2, .row-3, .row-4, .row-5, .row-6, .row-7 {
   position: relative;
 }
-
 .signUpButton {
   background-color: var(--primary-dark-color);
   color: white;
