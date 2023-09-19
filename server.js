@@ -12,12 +12,8 @@ app.use(express.static(path.join(__dirname, './build')));
 app.use(bodyParser.json());
 app.use(cors());
 
-
 app.post('/send-email', async (req, res) => {
-
   const { recipientEmail } = req.body;
-
-
   try {
     const msg = {
       to: recipientEmail,
@@ -28,14 +24,12 @@ app.post('/send-email', async (req, res) => {
 
     await sgMail.send(msg);
     // console.log('Email sent');
-    res.sendStatus(200); // Send a success status back to the React app
+    res.sendStatus(200);
   } catch (error) {
     // console.error('Email sending failed:', JSON.stringify(error));
-    res.status(500).send('Email sending failed'); // Send an error status back to the React app
+    res.status(500).send('Email sending failed');
   }
 });
-
-
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
