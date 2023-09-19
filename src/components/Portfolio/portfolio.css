@@ -1,10 +1,12 @@
+@media screen and (orientation: landscape) {
+
 .banner2 {
   width: 100%;
   height: auto;
   z-index: 0;
   display: block;
 }
-.form-content-container {
+.portfolio-content-container {
   font-size:large;
   position: absolute;
   padding-left: 55vw;
@@ -36,4 +38,5 @@
 }
 .gallery-photo-vertical:hover {
   transform: scale(1.7);
+}
 }

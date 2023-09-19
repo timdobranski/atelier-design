@@ -1,6 +1,6 @@
 import Welcome from './components/Welcome/Welcome';
 import AboutUs from './components/AboutUs/AboutUs';
-import History from './components/History/History';
+import SignUp from './components/SignUp/SignUp';
 import Features from './components/Features/Features';
 import Portfolio from './components/Portfolio/Portfolio';
 import Reviews from './components/Reviews/Reviews';
@@ -12,7 +12,7 @@ function App() {
     <div className="App grid-container">
       <Welcome />
       <AboutUs />
-      <History />
+      <SignUp />
       <Features />
       <Portfolio />
       <Reviews />

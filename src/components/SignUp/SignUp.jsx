@@ -2,8 +2,8 @@ import banner1 from '../../assets/images/banner-1.jpg';
 import axios from 'axios';
 import '../../index.css';
 import '../../index.mobile.css';
-import './history.css';
-import './history.mobile.css';
+import './signUp.css';
+import './signUp.mobile.css';
 import { useState } from 'react';
 
 function History() {
@@ -40,7 +40,7 @@ function History() {
             onChange={handleEmailChange}
             className="email-input radius"
           />
-          <button type="submit" className="purpleButton radius">
+          <button type="submit" className="signUpButton radius">
             SIGN UP
           </button>
         </form>

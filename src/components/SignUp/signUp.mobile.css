@@ -1,0 +1,40 @@
+@media screen and (orientation: portrait) {
+  .banner1 {
+    width: 100vw;
+    height: auto;
+    z-index: 0;
+    display: block;
+  }
+
+  .content-container {
+    font-size:large;
+    padding-left: var(--left-content-margin);
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .email-input{
+    font-size: 3vw;
+    padding: 0.25vw;
+    width: 55vw;
+    height: 5vw;
+    border: solid 1px black;
+  }
+  .email-input:focus{
+    outline: none;
+  }
+  .comment {
+    font-style: italic;
+    color: var(--primary-dark-color);
+  }
+  .signUpButton {
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+    padding: 1vw;
+    width: 20vw;
+    height: 6vw;
+    background-color: var(--primary-dark-color);
+    color: white;
+  }
+}

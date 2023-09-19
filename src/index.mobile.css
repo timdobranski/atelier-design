@@ -1,7 +1,7 @@
 
 @media screen and (orientation: portrait) {
 p {
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 .grid-container {
   display: grid;
@@ -25,7 +25,7 @@ p {
 }
 
 .radius{
-  border-radius: 6px;
+  border-radius: 2px;
 }
 .row-3 {
   align-items: left;

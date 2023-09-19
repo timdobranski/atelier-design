@@ -1,11 +1,12 @@
 import { BsFacebook, BsInstagram } from 'react-icons/bs';
 import '../../index.css';
 import './footer.css';
+import './footer.mobile.css';
 
 function Footer() {
   return (
     <div className='footer-container centered'>
-      <p className='followUs'> Follow Us: </p>
+      <p className='section-titles'> FOLLOW US: </p>
       <a href="https://www.facebook.com/" aria-label='See our facebook page'>
         <BsFacebook className='social-icon' />
       </a>

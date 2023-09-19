@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import reviews from '../../assets/fakeReviews.js';
 import '../../index.css';
+import '../../index.mobile.css';
 import './reviews.css';
+import './reviews.mobile.css';
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 import { BsDot } from 'react-icons/bs';
 

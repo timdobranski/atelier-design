@@ -6,11 +6,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 :root {
-  --primary-dark-color: rgb(171, 81, 189);
-  --primary-light-color: #e7dff6;
+  --primary-dark-color: rgb(255, 0, 119);
+  --primary-light-color: #e8e8e8;
   --secondary-dark-color: #ffd816;
   --secondary-light-color: #ffeac0;
   --left-content-margin: 8vw;
+  --hero-gradient: linear-gradient(90deg, rgba(245, 37, 151, 1) 35%, rgba(235, 203, 37, 1) 65%);
+  --title-gradient: linear-gradient(to right, var(--primary-dark-color) 0%, var(--secondary-dark-color) 100%);
+  --sunset-gradient: linear-gradient(to right, rgb(225, 66, 153) 0%, orange 50%, yellow 100%);
+
 }
 p {
   font-size: 1.5vw;
@@ -22,7 +26,7 @@ p {
 }
 .section-titles {
   font-size: 2vw;
-  background: linear-gradient(to right, var(--primary-dark-color) 0%, var(--secondary-dark-color) 100%);
+  background: var(--sunset-gradient);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
@@ -60,7 +64,7 @@ p {
   position: relative;
 }
 
-.purpleButton {
+.signUpButton {
   background-color: var(--primary-dark-color);
   color: white;
   display: block;
@@ -70,16 +74,16 @@ p {
   padding: 1vw 1vw;
   margin: 1vw 0vw;
 }
-.purpleButton:hover {
+.signUpButton:hover {
   cursor: pointer;
-  background-color: rgb(95, 36, 124)
+  background-color: rgb(105, 0, 151);
 }
 .centered {
   text-align: center;
   align-items: center;
 }
 .radius{
-  border-radius: 6px;
+  border-radius: 4px;
 }
 .linked-text{
   color: var(--primary-dark-color);

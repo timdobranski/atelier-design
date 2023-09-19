@@ -1,0 +1,16 @@
+@media screen and (orientation: portrait) {
+  .social-icon {
+    color: var(--primary-dark-color);
+    font-size: 10vw;
+    margin: 5vw;
+    text-align: center;
+  }
+  .social-icon:hover {
+    transform: scale(1.3);
+    color: black;
+  }
+
+  .footer-container {
+    background-color: var(--primary-light-color);
+  }
+}
