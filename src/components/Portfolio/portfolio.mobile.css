@@ -30,7 +30,7 @@
     margin: 2vw
   }
   .gallery-photo:hover {
-    transform: scale(3);
+    transform: scale(2);
   }
   .gallery-photo-vertical {
     height: 45vw;
@@ -39,7 +39,7 @@
     margin-right: 2vw
   }
   .gallery-photo-vertical:hover {
-    transform: scale(3);
+    transform: scale(2);
   }
 
   .portfolio-app-labels {

@@ -52,11 +52,11 @@
   }
   .active-dot {
     color: var(--primary-dark-color);
-    font-size: 3vw;
+    font-size: 8vw;
   }
   .inactive-dot {
     color: var(--primary-light-color);
-    font-size: 3vw;
+    font-size: 8vw;
   }
   .review-title {
     font-size: 5vw;
