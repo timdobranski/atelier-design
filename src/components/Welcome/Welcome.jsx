@@ -6,22 +6,29 @@ import '../../index.mobile.css';
 import './welcome.css';
 import './welcome.mobile.css';
 import { useState, useEffect } from 'react';
-import helpers from '../../helpers';
 
 function Welcome() {
   const [fadedIn, setFadedIn] = useState(false);
   const [orientation, setOrientation] = useState("portrait");
 
+  // Function to determine and set the orientation
+  const checkOrientation = () => {
+    if (window.innerWidth > window.innerHeight) {
+      setOrientation("landscape");
+    } else {
+      setOrientation("portrait");
+    }
+  };
 
   useEffect(() => {
     setFadedIn(true);
   }, []);
 
   useEffect(() => {
-    helpers.checkOrientation(setOrientation);
-    window.addEventListener("resize", helpers.checkOrientation);
+    checkOrientation();
+    window.addEventListener("resize", checkOrientation);
     return () => {
-      window.removeEventListener("resize", helpers.checkOrientation);
+      window.removeEventListener("resize", checkOrientation);
     };
   }, []);
 
