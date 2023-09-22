@@ -28,26 +28,23 @@
   }
   .early-earth{
     width: 25vw;
-    border: solid 5px var(--primary-light-color);
-    border-radius: 5px;
-    margin-top: 2vw;
+    margin-top: 3vw;
   }
   .ReactModal__Content :focus {
     outline: none;
   }
   .modal{
       position: absolute;
-      top: 10vw;
+      top: 6vw;
       left: 40px;
       right: 40px;
       bottom: 40px;
-      margin-top: 10vw;
       color: white;
-      border: solid 5px white;
-      border-radius: 10px;
-      background-color: rgba(0,0,0,1);
+      border: solid .5vw var(--primary-dark-color);
+      background-color: white;
+      background-size: cover;
       width:65vw;
-      height: 25vw;
+      height: 75vh;
       text-align: center;
       margin: 0 auto;
       z-index: 3;
@@ -55,8 +52,25 @@
   }
   .modal-title {
     margin-top: 0;
+    font-size: 5vw;
+    color: white;
   }
   .modal-paragraph {
     font-size: 1vw;
+    padding: 2vw;
+    padding-bottom: 0;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+  .modal-content-container {
+    background-color: rgba(0,0,0,.75);
+    margin: 3vw;
+    padding-bottom: 3vh;
+  }
+  .early-earth-caption {
+    color: white;
+    font-style: italic;
+    font-size: .75vw;
+    margin-top: 0;
   }
 }

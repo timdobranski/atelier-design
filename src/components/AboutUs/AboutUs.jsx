@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Modal from 'react-modal';
 import img1 from '../../assets/images/img-1.jpg';
-import earlyEarth from '../../assets/images/early-earth.jpeg';
+import earlyEarth from '../../assets/images/early-earth-2.jpg';
 import '../../index.css';
 import '../../index.mobile.css';
 import './aboutUs.css';
@@ -30,12 +30,15 @@ function Introduction() {
         }}
       >
         <div className='modal-container'>
-          <h4 className='section-titles modal-title'>Our History</h4>
-          <p className='modal-paragraph'>Over 13 billion years ago, when the Earth had only just began to settle and cool,
-            Rooster Grin had already built over two hundred websites. Our expert developers
-            have been building websites since the dawn of time, and we're ready to help you build yours.
-          </p>
-          <img className='early-earth' src={earlyEarth} alt="primordial early earth" />
+          <h4 className='section-titles modal-title'>OUR HISTORY</h4>
+          <div className='modal-content-container'>
+            <p className='modal-paragraph'>Over 4.5 billion years ago, when the Earth had only just began to settle and cool,
+              Rooster Grin had already built over two hundred websites. Our expert developers
+              have been building websites since the dawn of time, and we're ready to help you build yours.
+            </p>
+            <img className='early-earth' src={earlyEarth} alt="primordial early earth" />
+            <p className='early-earth-caption'>*Actual photograph of the first Rooster Grin offices</p>
+          </div>
         </div>
       </Modal>
       <div className='intro-grid'>
