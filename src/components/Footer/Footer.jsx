@@ -7,7 +7,7 @@ import './footer.mobile.css';
 function Footer() {
   return (
     <div className='footer-container centered'>
-      <p className='section-titles'> FOLLOW US: </p>
+      <p className='section-titles header-title'> FOLLOW US: </p>
       <a href='https://www.facebook.com/' aria-label='See our facebook page'>
         <BsFacebook className='social-icon' />
       </a>

@@ -16,8 +16,6 @@
   .features-content-container {
     margin-top: 4vw;
     margin-left: var(--left-content-margin);
-    margin-right: 5vw;
-    border-radius: 5px;
     height: 20vw;
   }
   .features-icons-grid {
@@ -27,8 +25,7 @@
     height: 100%;
     margin: auto;
     background-color: var(--primary-light-color);
-    align-items: center;
-    place-items: center;
+
   }
   .icon {
     width: 40%;
@@ -47,11 +44,10 @@
     padding-top: 2vw
   }
   .feature-paragraph {
-    border: solid .5vw var(--primary-dark-color);
+    border: solid 1vw var(--primary-dark-color);
     background-color: black;
-    border-radius: 5px;
     color: white;
-    width: 80vw;
+    width: 75vw;
     padding: 3vw;
   }
   .feature-titles {

@@ -13,14 +13,18 @@ function Form() {
     <div className="row-5 portfolio-container">
       <img className="banner2" src={banner2} alt="banner2" />
       <div className='portfolio-content-container'>
-        <h3 className="section-titles portfolio-title">PORTFOLIO</h3>
-        <p className="portfolio-description-paragraph">{'Check out some of our best work below'}</p>
+        <div className='portfolio-intro-container'>
+          <h3 className="section-titles portfolio-title">PORTFOLIO</h3>
+          <p className="portfolio-description-paragraph">{'Check out some of our best work below'}</p>
+          <p className="comment portfolio-comment">{'(my shameless plug)'}</p>
+        </div>
+
         <div className="gallery-container-grid">
           <img src={fitnessPass} className='gallery-photo-vertical' alt="mobile app to connect users with gym classes" />
           <video src={stringSchool} className='gallery-photo-vertical' controls></video>
           <img src={atelier} className='gallery-photo' alt="atelier retail clothing website" />
-          <p className='portfolio-app-labels' >FitnessPass App</p>
-          <p className='portfolio-app-labels'>String School App</p>
+          <p className='portfolio-app-labels' >FitnessPass</p>
+          <p className='portfolio-app-labels'>String School</p>
           <p className='portfolio-app-labels' >Atelier Apparel</p>
         </div>
       </div>

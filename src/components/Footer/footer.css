@@ -6,8 +6,11 @@
 }
 .social-icon:hover {
   transform: scale(1.3);
-  color: black;
+  color: var(--yellow);
 }
 .footer-container {
   background-color: var(--primary-light-color);
+}
+.header-title {
+  color: var(--orange);
 }

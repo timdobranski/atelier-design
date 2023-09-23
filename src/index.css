@@ -8,11 +8,10 @@ body {
 :root {
   --primary-dark-color: rgb(255, 0, 119);
   --primary-light-color: #e8e8e8;
-  --secondary-dark-color: #ffd816;
-  --secondary-light-color: #ffeac0;
+  --orange: rgb(255, 111, 0);
+  --yellow: rgb(255, 179, 0);
+  --dark-gray: #000000BF;
   --left-content-margin: 8vw;
-  --hero-gradient: linear-gradient(90deg, rgba(245, 37, 151, 1) 35%, rgba(235, 203, 37, 1) 65%);
-  --title-gradient: linear-gradient(to right, var(--primary-dark-color) 0%, var(--secondary-dark-color) 100%);
   --sunset-gradient: linear-gradient(to right, rgb(225, 66, 153) 0%, orange 50%, yellow 100%);
 }
 p {
@@ -76,12 +75,39 @@ p {
   text-align: center;
   align-items: center;
 }
-.radius{
-  border-radius: 4px;
-}
 .linked-text{
   color: var(--primary-dark-color);
   text-decoration: underline;
   font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
 }
 
+.comment {
+  font-style: italic;
+  color: var(--primary-dark-color);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+.slide-in-left {
+  animation: slideInFromLeft 1s ease-in-out;
+}

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Modal from 'react-modal';
+import { AiOutlineRight } from 'react-icons/ai';
 import img1 from '../../assets/images/img-1.jpg';
 import earlyEarth from '../../assets/images/early-earth-2.jpg';
 import '../../index.css';
@@ -53,7 +54,10 @@ function Introduction() {
               and improve visibility for your business. We are passionate about helping our
               clients achieve their goals and grow their brands.
             </p>
-            <p onClick={handleModalOpen} className='linked-text'>{'> Click Here To Learn More'}</p>
+            <div onClick={handleModalOpen}>
+              <AiOutlineRight className='linked-text arrow-right-icon'/>
+              <p className='linked-text'>{'Click Here To Learn More'}</p>
+            </div>
           </div>
         </div>
         <div className="intro-right">

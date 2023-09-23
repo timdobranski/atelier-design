@@ -20,7 +20,7 @@ function Features() {
             <h3 className='section-titles'>OUR VALUES</h3>
             <p>Hover over each icon below to learn more about our process that drives the best output in the business.</p>
             <div className='features-paragraph-container'>
-              {hoveredIcon && <p className='feature-paragraph fade-in'>{paragraphs[hoveredIcon]}</p>}
+              {hoveredIcon && <p className='feature-paragraph slide-in-left'>{paragraphs[hoveredIcon]}</p>}
             </div>
           </div>
         </div>
