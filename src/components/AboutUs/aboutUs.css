@@ -29,6 +29,7 @@
   .early-earth{
     width: 25vw;
     margin-top: 3vw;
+    border: solid .5vw rgb(255, 111, 0);
   }
   .ReactModal__Content :focus {
     outline: none;
@@ -64,11 +65,12 @@
   }
   .modal-content-container {
     background-color: rgba(0,0,0,.75);
-    margin: 3vw;
+    margin-left: 3vw;
+    margin-right: 3vh;
     padding-bottom: 3vh;
   }
   .early-earth-caption {
-    color: white;
+    color: black;
     font-style: italic;
     font-size: .75vw;
     margin-top: 0;

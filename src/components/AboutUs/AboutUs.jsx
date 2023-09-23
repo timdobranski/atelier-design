@@ -36,9 +36,9 @@ function Introduction() {
               Rooster Grin had already built over two hundred websites. Our expert developers
               have been building websites since the dawn of time, and we're ready to help you build yours.
             </p>
-            <img className='early-earth' src={earlyEarth} alt="primordial early earth" />
-            <p className='early-earth-caption'>*Actual photograph of the first Rooster Grin offices</p>
           </div>
+          <img className='early-earth' src={earlyEarth} alt="primordial early earth" />
+          <p className='early-earth-caption'>*Actual photograph of the first Rooster Grin offices</p>
         </div>
       </Modal>
       <div className='intro-grid'>
