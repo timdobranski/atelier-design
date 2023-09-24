@@ -10,6 +10,7 @@
   }
   .intro-left {
     grid-column: 1;
+    align-items: center;
   }
   .intro-right {
     grid-column: 2;
@@ -19,18 +20,15 @@
     width: 100%;
     height: auto;
   }
-  .textContentContainer {
-    margin-top: 5vw;
+  .text-content-container {
+    margin-top: var(--section-content-top-margin);
     margin-left: var(--left-content-margin);
     margin-right: 6vw;
-    font-size: large;
   }
   .early-earth{
     width: 25vw;
     margin-top: 3vw;
-    /* border: solid .5vw rgb(255, 111, 0); */
     border: solid .5vw rgb(255, 179, 0);
-    /* border: solid .5vw var(--primary-dark-color); */
   }
   .ReactModal__Content :focus {
     outline: none;

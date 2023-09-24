@@ -9,10 +9,13 @@
     font-size:large;
     position: absolute;
     padding-left: 55vw;
-    padding-top: 2vw;
+    padding-top: 0vw;
     top: 0;
     left: 0;
     z-index: 1;
+  }
+  .portfolio-intro-container {
+    padding-top: var(--section-content-top-margin);
   }
   .gallery-container-grid {
     display: grid;

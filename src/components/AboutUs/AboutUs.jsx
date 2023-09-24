@@ -44,7 +44,7 @@ function Introduction() {
       </Modal>
       <div className='intro-grid'>
         <div className="intro-left">
-          <div className="textContentContainer">
+          <div className="text-content-container">
             <h4 className='section-titles'>ABOUT US</h4>
             <p>
               At Rooster Grin Media, we believe that your business is our business.

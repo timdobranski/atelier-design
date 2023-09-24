@@ -14,7 +14,7 @@
   }
 
   .features-content-container {
-    margin-top: 5vw;
+    padding-top: var(--section-content-top-margin);
     margin-left: var(--left-content-margin);
     margin-right: 5vw;
     font-size: large;
@@ -41,18 +41,16 @@
     padding: 2.5vw;
     width: 30%;
     height: 50%;
-    border: solid .3vw purple;
+    border: solid .3vw var(--primary-dark-color);
+    /* border: solid .3vw var(--yellow); */
     border-radius: 50%;
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
   }
-
   .icon {
     width: 100%;
     margin: auto;
     text-align: center;
-    /* border: solid .5vw var(--primary-dark-color); */
-
   }
   .icon:hover {
     transform: scale(1.2);

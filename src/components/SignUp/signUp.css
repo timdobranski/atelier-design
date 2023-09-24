@@ -9,7 +9,7 @@
     font-size:large;
     position: absolute;
     padding-left: var(--left-content-margin);
-    padding-top: 4vw;
+    padding-top: var(--section-content-top-margin);
     top: 0;
     left: 0;
     z-index: 1;

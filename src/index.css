@@ -11,6 +11,8 @@ body {
   --orange: rgb(255, 111, 0);
   --yellow: rgb(255, 179, 0);
   --dark-gray: #000000BF;
+
+  --section-content-top-margin: 0vw;
   --left-content-margin: 8vw;
   --sunset-gradient: linear-gradient(to right, rgb(225, 66, 153) 0%, orange 50%, yellow 100%);
 }
@@ -23,7 +25,7 @@ p {
   gap: 0px;
 }
 .section-titles {
-  font-size: 2vw;
+  font-size: 4vw;
   background: var(--sunset-gradient);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -32,6 +34,7 @@ p {
   background-clip: text;
   color: transparent;
   margin-bottom: 0.5vw;
+  margin-top: 2.5vw;
 }
 .row-1{
   grid-row: 1 / 2;

@@ -5,12 +5,13 @@
     grid-template-rows: auto auto;
     background-color: white;
     align-items: center;
+    padding-top: 2vw;
   }
   .reviews-left {
     grid-column: 1 / 2;
     height:100%;
     margin-left: var(--left-content-margin);
-    margin-top: 5vw;
+    margin-top: var(--section-content-top-margin);
     margin-bottom: 4vw;
   }
   .reviews-right {
