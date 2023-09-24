@@ -20,18 +20,36 @@
   }
   .features-icons-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     width: 100%;
     height: 100%;
     margin: auto;
     background-color: var(--primary-light-color);
-
+    align-items: center;
+    justify-content: center;
+  }
+  .ring-container {
+    margin: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .ring {
+    padding: 6vw;
+    width: 30%;
+    height: 50%;
+    border: solid .3vw purple;
+    border-radius: 50%;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
   }
   .icon {
-    width: 40%;
+    width: 100%;
     margin: auto;
     text-align: center;
-    padding: 5vw;
   }
   .icon:hover {
     transform: scale(1.3);
