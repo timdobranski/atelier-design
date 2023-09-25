@@ -24,52 +24,6 @@
     margin-left: var(--left-content-margin);
     margin-right: 6vw;
   }
-  .early-earth{
-    width: 60vw;
-    margin-top: 4vw;
-  }
-  .ReactModal__Content :focus {
-    outline: none;
-  }
-  .modal{
-    position: fixed; /* Changed from absolute to fixed */
-    top: 50%; /* Centered vertically */
-    left: 50%; /* Centered horizontally */
-    transform: translate(-50%, -50%); /* Adjusts for exact centering */
-    color: white;
-    border: solid 3vw var(--primary-dark-color);
-    background-color: black;
-    width: 75vw;
-    height: 80vh;
-    text-align: center;
-    z-index: 3;
-    padding: 1vw;
-  }
-  .modal-title {
-    margin-top: 0;
-    font-size: 8vw;
-    color: white;
-  }
-  .modal-paragraph {
-    font-size: 5vw;
-    padding: 2vw;
-    padding-bottom: 0;
-    margin-left: 3vw;
-    margin-right: 3vw;
-  }
-  .modal-content-container {
-    /* background-color: rgba(0,0,0,.75); */
-    margin-left: 3vw;
-    margin-right: 3vw;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-  }
-  .early-earth-caption {
-    color: white;
-    font-style: italic;
-    font-size: 4vw;
-    margin: 2vw;
-  }
   .arrow-right-icon {
     color: var(--primary-dark-color);
     font-size: 3vw;

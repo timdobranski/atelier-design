@@ -1,0 +1,65 @@
+@media screen and (orientation: portrait) {
+  .early-earth{
+    width: 100%;
+    display: block;
+  }
+  .ReactModal__Content :focus {
+    outline: none;
+  }
+  .modal{
+      position: absolute;
+      top: 8vh;
+      left: 1vw;
+      right: 1vw;
+      /* bottom: 40px; */
+      color: white;
+      background-color: white;
+      background-size: cover;
+      width:90vw;
+      height: 50vh;
+      text-align: center;
+      margin: 0 auto;
+      z-index: 3;
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.75);
+    z-index: 2;
+  }
+  .modal-title {
+    font-size: 10vw;
+  }
+  .modal-paragraph {
+    font-size: 5vw;
+    padding-top: 5vw;
+    padding-bottom: 1vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    color: black;
+  }
+  .modal-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .image-container {
+    position: relative;
+  }
+  .modal-content-container {
+    background-color: rgba(0,0,0,.75);
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  .early-earth-caption {
+    position: absolute;
+    bottom: 1vw;
+    left: 1vw;
+    color: white;
+    font-style: italic;
+    font-size: 3vw;
+    margin: 0;
+  }
+}

@@ -1,7 +1,9 @@
 import Modal from 'react-modal';
 import earlyEarth from '../../assets/images/early-earth-2.jpg';
-import './historyModal.css';
 import './historyModal.mobile.css';
+import './historyModal.css';
+import '../../index.css';
+import '../../index.mobile.css';
 
 function HistoryModal({ isOpen, onRequestClose }) {
   return (
@@ -17,8 +19,10 @@ function HistoryModal({ isOpen, onRequestClose }) {
           have been building websites since the dawn of time, and we're ready to help you build yours.
         </p>
         <div className='modal-content-container'>
-          <img className='early-earth' src={earlyEarth} alt="primordial early earth" />
-          <p className='early-earth-caption'>*Actual photograph of the first Rooster Grin offices</p>
+          <div className='image-container'>
+            <img className='early-earth' src={earlyEarth} alt="primordial early earth" />
+            <p className='early-earth-caption'>*Actual photograph of the first Rooster Grin offices</p>
+          </div>
         </div>
       </div>
     </Modal>

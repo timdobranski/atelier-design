@@ -1,8 +1,7 @@
 @media screen and (orientation: landscape) {
   .early-earth{
-    width: 25vw;
-    margin-top: 3vw;
-    border: solid .5vw rgb(255, 179, 0);
+    width: 100%;
+    display: block;
   }
   .ReactModal__Content :focus {
     outline: none;
@@ -14,11 +13,10 @@
       right: 40px;
       bottom: 40px;
       color: white;
-      border: solid .5vw var(--primary-dark-color);
       background-color: white;
       background-size: cover;
-      width:65vw;
-      height: auto;
+      width:45vw;
+      height: 50vh;
       text-align: center;
       margin: 0 auto;
       z-index: 3;
@@ -39,23 +37,31 @@
   }
   .modal-paragraph {
     font-size: 1vw;
-    padding: 2vw;
-    padding-bottom: 0;
+    padding-bottom: 1vw;
     margin-left: 3vw;
     margin-right: 3vw;
+    color: black;
   }
   .modal-container {
     display: flex;
     flex-direction: column;
   }
+  .image-container {
+    position: relative;
+  }
   .modal-content-container {
     background-color: rgba(0,0,0,.75);
-    flex-grow: 1
+    flex-grow: 1;
+    overflow: hidden;
   }
   .early-earth-caption {
+    position: absolute;
+    bottom: 1vw;
+    left: 1vw;
     color: white;
     font-style: italic;
-    font-size: .75vw;
-    margin-top: 0;
+    font-size: 1vw;
+    font-weight:800;
+    margin: 0;
   }
 }
