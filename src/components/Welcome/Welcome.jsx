@@ -6,7 +6,6 @@ import '../../index.mobile.css';
 import './welcome.css';
 import './welcome.mobile.css';
 import { useState, useEffect } from 'react';
-import clippy from 'clippyjs';
 
 function Welcome() {
   const [fadedIn, setFadedIn] = useState(false);
@@ -33,11 +32,6 @@ function Welcome() {
     };
   }, []);
 
-  const clippyAnimation = clippy.load('Clippy', (agent) => {
-    // do anything with the loaded agent
-    agent.show();
-    agent.speak('When all else fails, bind some paper together. My name is Clippy.');
-  });
 
   return (
     <div className={`row-1 ${fadedIn ? 'fade-in' : ''}`}>
@@ -52,9 +46,6 @@ function Welcome() {
           <h1 id='header1'>WELCOME TO</h1>
           <h2 id='header2' >Rooster Grin</h2>
         </div>
-      </div>
-      <div className='clippy-container'>
-        {clippyAnimation}
       </div>
     </div>
   );
