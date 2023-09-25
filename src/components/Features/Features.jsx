@@ -34,7 +34,7 @@ function Features() {
           {iconsData.map(icon => (
             <div key={icon.id} className='ring-container'>
               <div className='ring'>
-                <div className='icon'
+                <div className={`icon ${icon.id === 'QUALITY' ? 'icon-offset' : ''}`}
                   onMouseEnter={() => setHoveredIcon(icon.id)}
                   onMouseLeave={() => setHoveredIcon(null)}>
                   <img src={icon.src} alt={icon.alt} />

@@ -46,6 +46,7 @@
   }
   .nav:hover{
     background-color: var(--primary-light-color);
+    cursor: pointer;
   }
   .active-dot {
     color: var(--primary-dark-color);

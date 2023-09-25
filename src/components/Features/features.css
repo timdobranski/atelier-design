@@ -64,7 +64,10 @@
     width: 100%;
     margin: auto;
     text-align: center;
-    z-index: 1; /* To ensure the icon is above the pseudo-element */
+    z-index: 1;
+  }
+  .icon-offset {
+    padding-left: .25vw;
   }
   .icon:hover {
     transform: scale(1.2);

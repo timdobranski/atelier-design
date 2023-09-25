@@ -1,14 +1,13 @@
 import { useState } from 'react';
-import Modal from 'react-modal';
 import { AiOutlineRight } from 'react-icons/ai';
 import img1 from '../../assets/images/img-1.jpg';
-import earlyEarth from '../../assets/images/early-earth-2.jpg';
+import HistoryModal from '../HistoryModal/HistoryModal';
 import '../../index.css';
 import '../../index.mobile.css';
 import './aboutUs.css';
 import './aboutUs.mobile.css';
 
-function Introduction() {
+function AboutUs() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const handleModalOpen = () => {
@@ -20,28 +19,7 @@ function Introduction() {
 
   return (
     <div className="row-2">
-      <Modal isOpen={modalIsOpen}
-        onRequestClose={handleModalClose}
-        className='modal'
-        style={{
-          overlay: {
-            backgroundColor: 'rgba(0, 0, 0, 0.75)',
-            zIndex: 2
-          },
-        }}
-      >
-        <div className='modal-container'>
-          <h4 className='section-titles modal-title'>OUR HISTORY</h4>
-          <div className='modal-content-container'>
-            <p className='modal-paragraph'>Over 4.5 billion years ago, when the Earth had only just began to settle and cool,
-              Rooster Grin had already built over two hundred websites. Our expert developers
-              have been building websites since the dawn of time, and we're ready to help you build yours.
-            </p>
-            <img className='early-earth' src={earlyEarth} alt="primordial early earth" />
-            <p className='early-earth-caption'>*Actual photograph of the first Rooster Grin offices</p>
-          </div>
-        </div>
-      </Modal>
+      <HistoryModal isOpen={modalIsOpen} onRequestClose={handleModalClose} />
       <div className='intro-grid'>
         <div className="intro-left">
           <div className="text-content-container">
@@ -68,4 +46,4 @@ function Introduction() {
   );
 }
 
-export default Introduction;
+export default AboutUs;

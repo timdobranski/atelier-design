@@ -1,0 +1,61 @@
+@media screen and (orientation: landscape) {
+  .early-earth{
+    width: 25vw;
+    margin-top: 3vw;
+    border: solid .5vw rgb(255, 179, 0);
+  }
+  .ReactModal__Content :focus {
+    outline: none;
+  }
+  .modal{
+      position: absolute;
+      top: 8vh;
+      left: 40px;
+      right: 40px;
+      bottom: 40px;
+      color: white;
+      border: solid .5vw var(--primary-dark-color);
+      background-color: white;
+      background-size: cover;
+      width:65vw;
+      height: auto;
+      text-align: center;
+      margin: 0 auto;
+      z-index: 3;
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.75);
+    z-index: 2;
+  }
+  .modal-title {
+    margin-top: 0;
+    font-size: 5vw;
+    color: white;
+  }
+  .modal-paragraph {
+    font-size: 1vw;
+    padding: 2vw;
+    padding-bottom: 0;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+  .modal-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-content-container {
+    background-color: rgba(0,0,0,.75);
+    flex-grow: 1
+  }
+  .early-earth-caption {
+    color: white;
+    font-style: italic;
+    font-size: .75vw;
+    margin-top: 0;
+  }
+}
