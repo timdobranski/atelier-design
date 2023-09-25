@@ -14,7 +14,8 @@ body {
 
   --section-content-top-margin: 0vw;
   --left-content-margin: 8vw;
-  --sunset-gradient: linear-gradient(to right, rgb(225, 66, 153) 0%, orange 50%, yellow 100%);
+  --sunset-gradient: linear-gradient(to right, rgb(225, 66, 153)0%, orange 50%, rgb(255, 208, 0) 100%);
+  --features-gradient: linear-gradient(to right, rgb(114, 66, 225)0%, rgb(255, 0, 115) 50%, rgb(255, 208, 0) 100%);
 }
 p {
   font-size: 1.5vw;

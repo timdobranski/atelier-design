@@ -38,19 +38,33 @@
     align-items: center;
   }
   .ring {
+    position: relative;
     padding: 2.5vw;
     width: 30%;
     height: 50%;
-    border: solid .3vw var(--primary-dark-color);
-    /* border: solid .3vw var(--yellow); */
-    border-radius: 50%;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    align-items: center;
+    justify-content: center;
   }
+  .ring::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: solid .3vw transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(var(--primary-light-color), var(--primary-light-color)), var(--features-gradient);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+
   .icon {
+    position: relative;
     width: 100%;
     margin: auto;
     text-align: center;
+    z-index: 1; /* To ensure the icon is above the pseudo-element */
   }
   .icon:hover {
     transform: scale(1.2);
