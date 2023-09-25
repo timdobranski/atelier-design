@@ -19,12 +19,10 @@
     height: auto;
     z-index: 0;
   }
-  .textContentContainer {
-    margin-top: 8vw;
+  .text-content-container {
+    margin-top: var(--section-content-top-margin);
     margin-left: var(--left-content-margin);
-    margin-right: 3vw;
-    margin: 8vw;
-    font-size: large;
+    margin-right: 6vw;
   }
   .early-earth{
     width: 60vw;

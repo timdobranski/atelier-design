@@ -41,7 +41,7 @@
     padding: 6vw;
     width: 30%;
     height: 50%;
-    border: solid .3vw purple;
+    border: solid .3vw var(--primary-dark-color);
     border-radius: 50%;
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */

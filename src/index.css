@@ -69,10 +69,14 @@ p {
   font-size: .75vw;
   padding: 1vw 1vw;
   margin: 1vw 0vw;
+  transition: transform 0.1s;
 }
 .signUpButton:hover {
   cursor: pointer;
   background-color: rgb(105, 0, 151);
+}
+.signUpButton:active {
+  transform: scale(0.95);
 }
 .centered {
   text-align: center;

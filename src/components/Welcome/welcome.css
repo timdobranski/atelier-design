@@ -1,5 +1,5 @@
 #header1 {
-  font-size: 3vw;
+  font-size: 4vw;
   padding-top: 6vw;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   -webkit-text-stroke: 2px white;
@@ -7,7 +7,7 @@
 }
 #header2 {
   color: white;
-  font-size: 4vw;
+  font-size: 5vw;
   padding-top:0vw;
   background: linear-gradient(90deg, rgba(245, 37, 151, 1) 35%, rgba(235, 203, 37, 1) 65%);
   -webkit-background-clip: text;
@@ -21,7 +21,6 @@
   display: block;
 }
 .hero-content-container {
-  font-size:large;
   position: absolute;
   width:100%;
   top: 0;
@@ -37,9 +36,4 @@
   background-color: black;
   opacity: 1;
   transition: opacity 1.5s ease-in;
-}
-.fade-out {
-  background-color: black;
-  opacity: 0;
-  transition: opacity 1.5s ease-out;
 }

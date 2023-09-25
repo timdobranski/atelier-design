@@ -39,6 +39,18 @@ function SignUp() {
       }, 3000); // show the notification for 3 seconds, then start fading
     } catch (error) {
       console.error('Error sending email:', error);
+      setEmail('');
+      setNotification({
+        show: true,
+        message: 'Signup failed. Please check that the address is valid and try again.',
+      });
+      setTimeout(() => {
+        setFading(true);
+        setTimeout(() => {
+          setNotification({ show: false, message: '' });
+          setFading(false);
+        }, 3000); // wait another 3 seconds before actually removing the element
+      }, 3000); // show the notification for 3 seconds, then start fading
     }
   };
 
