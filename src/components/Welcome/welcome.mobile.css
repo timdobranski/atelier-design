@@ -1,7 +1,7 @@
 @media screen and (orientation: portrait) {
   #header1 {
     font-size: 10vw;
-    padding-top: 30vh;
+    padding-top: 20vh;
     font-family: 'Montserrat', sans-serif;
     -webkit-text-stroke: 2px white;
     color: transparent;
@@ -9,7 +9,7 @@
   #header2 {
     color: white;
     font-size: 10vw;
-    padding-top:10vh;
+    padding-top:0vh;
     background: linear-gradient(90deg, rgba(245, 37, 151, 1) 35%, rgba(235, 203, 37, 1) 65%);
     /* background: var(--sunset-gradient); */
     -webkit-background-clip: text;
@@ -31,8 +31,8 @@
     z-index: 1;
   }
   .logo {
-    margin-left:8vw;
-    margin-top:3vw;
-    width: 35vw;
+    margin-left:2vw;
+    margin-top:2vw;
+    width: 20vw;
   }
 }
