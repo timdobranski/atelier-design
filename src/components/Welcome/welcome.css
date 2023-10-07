@@ -1,6 +1,6 @@
 #header1 {
   font-size: 4vw;
-  padding-top: 6vw;
+  padding-top: 0vw;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   -webkit-text-stroke: 2px white;
   color: transparent;
@@ -28,9 +28,11 @@
   z-index: 1;
 }
 .logo {
-  margin-left:10vw;
-  margin-top:3vw;
-  width: 15vw;
+  margin-left:2vw;
+  margin-top:2vw;
+  width: 12vw;
+  background-color: rgba(0, 0, 0, 1);
+  border: solid white .3vw
 }
 .fade-in {
   background-color: black;

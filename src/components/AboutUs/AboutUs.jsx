@@ -25,7 +25,7 @@ function AboutUs() {
           <div className="text-content-container">
             <h4 className='section-titles'>ABOUT US</h4>
             <p>
-              At Rooster Grin Media, we believe that your business is our business.
+              At Atelier Design, we believe that your business is our business.
               We excel at building solutions that are tailored to fit your needs
               and exceed your expectations. Our team of top-notch developers and designers
               will craft beautiful, responsive, and functional websites that will drive growth

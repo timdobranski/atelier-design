@@ -18,7 +18,7 @@ const reviews = [
   {
     name: 'Ralph Wiggum',
     title: 'Hire this man!',
-    text: 'Rooster Grin is the best! I love Rooster Grin!',
+    text: 'Atelier is the best! I love Atelier!',
     rating: 5,
     date: '3/12/2020'
   }

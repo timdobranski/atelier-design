@@ -1,6 +1,6 @@
 import hero from '../../assets/images/hero2.jpg';
 import heroVertical from '../../assets/images/hero-vertical2.jpg';
-import logo from '../../assets/icons/logo-white.svg';
+import logo from '../../assets/images/atelier-logo.png';
 import '../../index.css';
 import '../../index.mobile.css';
 import './welcome.css';
@@ -41,10 +41,10 @@ function Welcome() {
         <img className='hero' src={hero} alt='golden gate bridge at sunset' />
       )}
       <div className='hero-content-container'>
-        <img className='logo' src={logo} alt='rooster grin company logo' />
+        <img className='logo' src={logo} alt='company logo' />
         <div className='centered'>
           <h1 id='header1'>WELCOME TO</h1>
-          <h2 id='header2' >Rooster Grin</h2>
+          <h2 id='header2' >Atelier</h2>
         </div>
       </div>
     </div>
