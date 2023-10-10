@@ -3,9 +3,6 @@
     width: 100%;
     display: block;
   }
-  .ReactModal__Content :focus {
-    outline: none;
-  }
   .modal{
       position: absolute;
       top: 8vh;
@@ -20,6 +17,9 @@
       text-align: center;
       margin: 0 auto;
       z-index: 3;
+  }
+  .modal :focus {
+    outline: none;
   }
   .modal-overlay {
     position: fixed;
