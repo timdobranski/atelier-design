@@ -1,7 +1,3 @@
-## Rooster Grin Front End Test
-
-This is a front-end react app created using create-react-app and using a node express server
-
 ## Features
 
 Features include styling to client specifications, mobile responsive design, a modal, a carousel, and animations.
